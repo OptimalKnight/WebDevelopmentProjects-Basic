@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Champions League</title>
+    <link rel="stylesheet" href="./ucl homepage.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/uefa-logo.svg" alt="UEFA logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li class="exit-btn hide-desktop" id="exit"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="https://www.uefa.com/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="images/ucl-logo.svg" alt="main logo" class="server">
+            <h1>The Champions League is the competetion everyone wants to be in</h1>
+            <p class="subhead">You cannot make mistakes in the Champions League</p>
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="calender icon">
+                    <p>Checkout all the upcoming fixtures on our official calender.</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="wallet icon">
+                    <p>Buy the tickets to the upcoming matches.</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="mobile icon">
+                    <p>Checkout all the latest news and scores on our new official app.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/ramos.png" alt="ramos">
+                        <blockquote>"There is no bigger motivation than playing in the UEFA Champions League final."
+                        </blockquote>
+                        <figcaption>- Sergio Ramos</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/neymar.png" alt="neymar">
+                        <blockquote>"I believe the Champions League has all that magic because it gathers all the best
+                            European teams, and that gives you the feeling of trying to be the best. That's why the
+                            Champions League has this special kind of emotion."</blockquote>
+                        <figcaption>- Neymar</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Click this button to buy our official merchandise!</h2>
+        <a href="#" class="cta">Offical Merch</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/uefa-logo.svg" alt="UEFA logo" class="logo">
+                </a>
+                <p class="address">House of European football<br>Nyon, Switzerland</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function (e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+
+</html>
